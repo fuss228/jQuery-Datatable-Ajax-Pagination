@@ -5,11 +5,14 @@ MySQL + Express + jQuery DataTable
 
 修改 end 目录下的 setting.js 文件，配置你的mysql。
 ```javascript
-{  
-  "host"     : "localhost",  
-  "user"     : "yourname",  
-  "password" : "yourpasswd",  
-  "database" : "yourdbname"  
+module.exports = {
+    mysql: {
+        host: '127.0.0.1',
+        port: 3306,
+        user: 'root',
+        password: 'yourpassword',
+        database: 'yourdbname'
+    }
 }
 ```
 
